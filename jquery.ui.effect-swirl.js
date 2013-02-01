@@ -14,7 +14,7 @@
 
 $.effects.effect.swirl = function( o, done ) {
     var el = $( this ),
-        mode = $.effects.setMode( el, o.mode || "toggle" );
+        mode = $.effects.setMode( el, o.mode || "hide" );
 
     o = $.extend({},{spins:1},o);
     
