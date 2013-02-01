@@ -14,11 +14,11 @@
 
 $.effects.effect.swirl = function( o, done ) {
     var el = $( this ),
-        mode = $.effects.setMode( el, o.mode || "hide" );
+        mode = $.effects.setMode( el, o.mode || "toggle" );
 
     o = $.extend({},{spins:1},o);
     
-    if(o.mode == "hide"){
+    if(mode == "hide"){
         el
         .css({
             '-jq-swirl': 0,
